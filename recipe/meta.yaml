@@ -24,7 +24,7 @@ requirements:
   run:
     - python =3
     - astropy
-    - ctapipe =0.19.1
+    - ctapipe =0.19
     - protozfits
 
 test:
