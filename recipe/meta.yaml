@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ctapipe_io_nectarcam-{{ version }}.tar.gz
-  sha256: d4e9836295b150bdf2464c583781c1f7869f7dcd55a83fa9691868d3c1e68140
+  sha256: 8858b14270e070bdab6adc6b0e01241ded0983a2c9f24a76e68a7f9592ec0cf8
 
 build:
   number: 0
