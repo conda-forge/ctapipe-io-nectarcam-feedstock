@@ -10,7 +10,7 @@ source:
   sha256: 8858b14270e070bdab6adc6b0e01241ded0983a2c9f24a76e68a7f9592ec0cf8
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python =3
-    - astropy
+    - astropy-base
     - ctapipe =0.19
     - protozfits
     - scipy =1.11.4
