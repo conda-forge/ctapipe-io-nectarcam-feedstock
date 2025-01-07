@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ctapipe_io_nectarcam-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ctapipe_io_nectarcam-{{ version }}.tar.gz
   sha256: 8858b14270e070bdab6adc6b0e01241ded0983a2c9f24a76e68a7f9592ec0cf8
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python =3
+    - python {{ python_min }}
     - setuptools >=64.0.3
     - wheel
     - setuptools-scm >=3.4
     - pip
   run:
-    - python =3
+    - python >={{ python_min }}
     - astropy
     - ctapipe =0.19
     - protozfits
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/cta-observatory/ctapipe_io_nectarcam
