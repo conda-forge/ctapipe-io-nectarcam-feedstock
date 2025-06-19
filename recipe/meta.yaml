@@ -24,9 +24,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - astropy
-    - ctapipe =0.19
+    - ctapipe =0.24
     - protozfits
-    - scipy =1.11.4
+    - scipy
 
 test:
   imports:
