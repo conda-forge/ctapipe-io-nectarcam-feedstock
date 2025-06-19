@@ -1,5 +1,5 @@
 {% set name = "ctapipe-io-nectarcam" %}
-{% set version = "0.1.8" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ctapipe_io_nectarcam-{{ version }}.tar.gz
-  sha256: f560b5fb8bfd6816fc3342599b3c00959ae99997aa9ca7a2b29a0ea94913262a
+  sha256: c664d1039078e855ff365b2ed131fac5af0579e71f4048119a85296462fc1a1c
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -24,9 +24,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - astropy
-    - ctapipe =0.19
+    - ctapipe =0.24
     - protozfits
-    - scipy =1.11.4
+    - scipy
 
 test:
   imports:
