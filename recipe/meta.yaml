@@ -1,5 +1,5 @@
 {% set name = "ctapipe-io-nectarcam" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ctapipe_io_nectarcam-{{ version }}.tar.gz
-  sha256: a24586ed57ea4c475852a0d72e26787eea169457c40a37c978a5f724d0a46ef1
+  sha256: fe4401f4860dbcdfcb2ab4ed6e4776894d4d4190736bc45283e184f05c6ac7ef
 
 build:
   number: 0
